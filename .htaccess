@@ -1,0 +1,6 @@
+  RewriteEngine on
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME}.php -f
+  RewriteRule ^(.*)$ $1.php
+  RewriteRule ^member/([^/]+)$ member.php?u=$1 [L,QSA]
+  RewriteRule ^p/([^/]+)$ page.php?p=$1 [L,QSA]

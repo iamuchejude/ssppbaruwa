@@ -1,0 +1,918 @@
+:root {
+    --primaryColor: rgb(23, 5, 141);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    /* font-family: georgia; */
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    -webkit-font-smoothing: antiliased;
+    z-index: 1;
+}
+
+html, body {
+    background: url(../img/lines.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    color: var(--primaryColor);
+    text-decoration: none !important;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.column {
+    float: left;
+}
+
+.column-1 {
+    width: 10%;
+}
+
+.column-2 {
+    width: 20%;
+}
+
+.column-2-5  {
+    width: 25%;
+}
+
+.column-3 {
+    width: 30%;
+}
+
+.column-4 {
+    width: 40%;
+}
+
+.column-5 {
+    width: 50%;
+}
+
+.column-6 {
+    width: 60%;
+}
+
+.column-7 {
+    width: 70%;
+}
+
+.column-8 {
+    width: 80%;
+}
+
+.column-9 {
+    width: 90%;
+}
+
+.column-10 {
+    width: 100%;
+}
+
+a {
+    color: var(--primaryColor);
+    text-decoration: none;
+}
+
+/* Header Styles */
+header {
+    height: 70px;
+    width: 100%;
+    background: #ffffff;
+    padding: 0 50px;
+    border-bottom: 1px solid rgb(230, 228, 228);
+    z-index: 5;
+}
+
+/* Logo Styles */
+div.logo {
+    height: 100%;
+    padding: 18px 0;
+}
+
+img.logo {
+    height: 35px;
+}
+
+/* Navigation Styles */
+nav {
+    display: inline-block;
+    height: 100%;
+}
+
+nav ul {
+    list-style: none;
+    height: 100%;
+    float: left;
+    transition: .4s ease-in-out;
+    position: relative;
+}
+
+nav ul li a {
+    padding: 2px;
+}
+
+nav ul li.dropDown ul {
+    position: absolute;
+    background: #fff;
+    border: 1px solid rgb(248, 241, 241);
+    height: auto;
+    top: 40px;
+    padding: 10px 2px;
+    display: none;
+}
+
+nav ul li.dropDown ul li {
+    display: block;
+    padding: 5px;
+}
+
+nav ul li {
+    height: 100%;
+    display: inline-block;
+    padding: 26px 10px;
+}
+
+button.mobileMenu {
+    float: left;
+    border: none;
+    background: transparent;
+    padding: 2px;
+    margin: 23px 5px;
+    cursor: pointer;
+    display: none;
+}
+
+button.mobileMenu div {
+    width: 20px;
+    height: 3px;
+    border: 1px solid var(--primaryColor);
+    margin: 3px 0;
+    background: var(--primaryColor);
+}
+
+button.joinUs {
+    display: inline-block;
+    padding: 4px 20px;
+    background: var(--primaryColor);
+    color: #fff;
+    border: 1px solid var(--primaryColor);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .4s linear all;
+    margin: 19px 5px 18px 5px;
+}
+
+button.joinUs:hover {
+    background: #fff;
+    color: var(--primaryColor);
+}
+
+/* Footer Styles */
+footer {
+    padding: 10px 0px;
+    border-top: 1px solid rgb(241, 240, 240);
+    margin-top: 10px;
+}
+
+div.footContents {
+    padding: 20px 30px;
+    background: #111;
+    margin: 5px 0 10px 0;
+    color: #ddd;
+    display: flex;
+    flex-direction: row;
+}
+
+div.footContents > div {
+    width: 25%;
+    margin: 0 5px;
+    padding: 10px 5px;
+}
+
+div.footHolder {
+    padding: 0 3px;
+}
+
+div.footContent {
+    margin: auto;
+}
+
+div.footHeader {
+    color: rgb(143, 138, 138);
+    padding: 3px 3px;
+    font-weight: normal;
+    margin-bottom: 4px;
+    position: relative;
+}
+
+footer p.copyright {
+    text-align: center;
+    padding: 5px 10px;
+}
+
+/* Subscribe Form */
+form.subscribe {
+    position: relative;
+}
+
+form.subscribe input {
+    width: 100%;
+    padding: 10px 27px 10px 14px;
+    border: 1px solid #000;
+    font-size: 1.05em;
+    border-radius: 50px;
+}
+
+form.subscribe button {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    font-size: 1.15em;
+    color: var(--primaryColor);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.footHolder ul {
+    list-style: none
+}
+
+.footHolder ul li {
+    padding: 5px 0px;
+}
+
+/* Hero Styling */
+.hero {
+    color: #fff;
+    width: 100%;
+    height: 450px;
+    background: linear-gradient(0deg, rgba(2, 82, 230, 0.6), rgba(2, 82, 230, 0.6)), url('../img/background-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.heroContent {
+    position: absolute;
+    color: #fff;
+    padding: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.heroContent h4 {
+    font-size: 35px;
+    font-weight: normal;
+}
+
+.heroContent h3 {
+    font-size: 50px;
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+}
+/* Dropdown Menu */
+/* DropDown Menu Styles Goes Here */
+
+/* Page Styles */
+.pageHeader {
+    padding: 30px 10px;
+    height: 120px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(0deg, rgba(2, 82, 230, 0.3), rgba(2, 82, 230, 0.3)), url('../img/background-2.jpg');
+    text-align: center;
+}
+
+.pageHeader h3 {
+    font-size: 1.8em;
+}
+
+/* Form Layouts */
+.formLayout {
+    border: 1px solid #eee;
+    padding: 5px;
+    margin: 10px auto;
+    background: #fff;
+}
+
+.formLayout.register {
+    width: 520px;
+}
+
+.formLayout.login {
+    width: 350px;
+}
+
+div.input-row {
+    display: flex;
+    flex-direction: row;
+    padding: 5px 10px;
+}
+
+div.input-group {
+    margin: 3px 10px;
+}
+
+div.input-row .input-group:first-child {
+    margin-left: 0;
+}
+
+div.input-row .input-group:last-child {
+    margin-right: 0;
+}
+
+div.input-row.one > div.input-group {
+    width: 100%;
+}
+
+div.input-row.two > div.input-group {
+    width: 50%;
+}
+
+div.input-row.three > div.input-group {
+    width: 33.3333%;
+}
+
+div.input-group label {
+    display: block;
+    font-weight: 500;
+}
+
+div.input-group input, div.input-group select {
+    width: 100%;
+    padding: 7px 10px;
+    font-size: 1.02em;
+    margin-top: 5px;
+    border: 1px solid #999 !important;
+    background: #fff !important;
+}
+
+div.btn-group {
+    padding: 10px 10px;
+    text-align: center;
+}
+
+div.btn-group button {
+    cursor: pointer;
+    font-size: 0.9em;
+    padding: 8px 25px;
+    color: #fff;
+}
+
+div.btn-group button.submitBtn {
+    background: var(--primaryColor);
+    border: 1px solid var(--primaryColor);
+}
+
+div.btn-group button.resetBtn, button.regBtn {
+    background: rgb(202, 16, 16);
+    border: 1px solid rgb(202, 16, 16);
+}
+
+div.btn-group button.full {
+    width: 100%;
+}
+
+span.required {
+    color: rgb(202, 16, 16);
+}
+
+p.btn-info {
+    margin-bottom: 4px;
+}
+
+p.forgotLink {
+    padding: 0 10px 15px 10px;
+    text-align: right;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Tag Info Content */
+.tagInfo {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    background: #eee;
+}
+
+.tagInfoNav {
+    width: 150px;
+}
+
+.tagInfoNav ul li {
+    padding: 10px 15px;
+    border: 1px solid #ece9e9;
+    cursor: pointer;
+    color: var(--primaryColor);
+    transition: .4s ease-in-out;
+}
+
+.tagInfoNav ul li.active {
+    background: #fff;
+    border: 1px solid #fff;
+    font-weight: 600;
+}
+
+.tagInfoContent {
+    padding: 5px 10px;
+    background: #fff;
+    width: 100%;
+}
+
+.tagContent {
+    display: none;
+    transition: .4s ease-in-out;
+}
+
+.tagContent.active {
+    display: block;
+}
+
+p.formInfo {
+    font-size: small !important;
+    padding: 5px 10px;
+}
+
+div.message {
+    font-size: 14px;
+    margin: 8px;
+    text-align: center;
+    padding: 8px;
+    border-radius: 2px;
+}
+
+div.message a {
+    font-weight: 600;
+}
+
+div.message.error {
+    background: rgba(218, 112, 112, 0.8);
+    color: rgb(180, 43, 43);
+    border: 1px solid rgb(192, 44, 44);
+}
+
+div.message.success a {
+    color: rgb(180, 43, 43);
+}
+
+div.message.info {
+    background: rgb(147, 205, 228);
+    color: rgb(44, 135, 172);
+    border: 1px solid rgb(102, 188, 223);
+}
+
+div.message.success a {
+    color: rgb(44, 135, 172);
+}
+
+div.message.success {
+    background: rgb(122, 194, 154);
+    color: rgb(4, 95, 45);
+    border: 1px solid rgb(6, 110, 53);
+}
+
+div.message.success a {
+    color: rgb(4, 95, 45);
+}
+
+span.or {
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+    font-weight: 900;
+}
+
+div.btn-group.forgot {
+    padding: 15px 0;
+    margin: 5px;
+    border-top: 1px solid #ddd;
+}
+
+div.topBar {
+    background: rgb(52, 62, 73);
+    color: #fff;
+    padding: 0 100px;
+}
+
+.topBar a {
+    color: #fff;
+    padding: 0;
+}
+
+.topBar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.topBar ul li {
+    display: inline-block;
+    padding: 12px 10px 2px 10px;
+}
+
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 6;
+    display: none;
+    transition: .5s ease-in-out;
+}
+
+.modal.active {
+    display: block;
+}
+
+.modal-inner {
+    background: #fff;
+    transition: .5s ease-in-out;
+    color: #000;
+    margin: 20px auto;
+    position: relative;
+    border: 1px solid #ddd;
+}
+
+.modal.modal-sm .modal-inner {
+    width: 300px;
+}
+
+.modalHeader {
+    padding: 10px 10px;
+}
+
+.modalContent {
+    padding: 0px 10px 10px 10px;
+}
+
+.modalContent ul {
+    list-style: none
+}
+
+.modalContent ul li {
+    padding: 3px 0px;
+}
+
+.modalClose {
+    font-size: 1.5em;
+    background: var(--primaryColor);
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    color: #fff;
+    border: 1px solid var(--primaryColor);
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    cursor: pointer;
+}
+
+.sInfo {
+    margin: 10px 0;
+    line-height: 18px;
+}
+
+.sInfoHeader {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.parishHeader {
+    padding: 15px 0;
+    color: var(--primaryColor);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+div.fsSection {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../img/2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.footSection {
+    display: flex;
+    flex-direction: row;
+    padding: 10px !important;
+}
+
+.cusCols {
+    color: #d1cbcb;
+    margin: 0;
+    padding: 15px;
+}
+
+.contain {
+    padding: 0 30px;
+}
+
+article.info {
+    margin: 20px 0;
+    line-height: 1.3em;
+    font-size: 0.98em;
+}
+
+article.info span.bold {
+    font-weight: bold;
+    font-size: 0.95em;
+}
+
+.infoHeader {
+    text-transform: capitalize !important;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #f0ebeb;
+    text-transform: uppercase;
+}
+
+article.info p {
+    margin: 2px 0;
+}
+
+/* Blog Section */
+section.section {
+    padding: 25px 10px;
+}
+
+div.sectionHeader {
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+}
+
+div.sectionHeader h3 {
+    color: rgb(48, 41, 112);
+    font-size: 1.35em;
+}
+
+div.sectionFooter {
+    padding: 15px 5px;
+    text-align: center;
+}
+
+div.sectionFooter a {
+    border: 1px solid var(--primaryColor);
+    padding: 5px 15px;
+    border-radius: 40px;
+    font-size: small;
+}
+
+div.sectionFooter a:hover {
+    border: 1px solid var(--primaryColor);
+    color: #fff;
+    background: var(--primaryColor);
+}
+
+div.sectionContent {
+    padding: 20px 20px;
+}
+
+div.singleBlog {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+}
+
+div.blogImage {
+    width: 80px;
+    height: 80px;
+}
+
+div.blogImage img {
+    width: 100%;
+    margin: 5px 10px;
+}
+
+div.blogContent {
+    margin: 0 5px 0 20px;
+    padding: 0px 0;
+    line-height: 1.2em
+}
+
+a.blogTitle {
+    font-size: 1.1em;
+}
+
+/* Intention Section */
+div.intents {
+    background: #fff;
+}
+
+section.intention {
+    padding: 90px 40px;
+}
+
+div.intent {
+    background: #fff;    
+}
+
+h2.intentionHeader {
+    font-weight: bold;
+    color: var(--primaryColor);
+    margin-bottom: 15px;
+}
+
+p.intentionContent {
+    font-size: 1.2em;
+    color: #333;
+}
+
+h4.intentHeader {
+    font-weight: bold;
+    color: #555;
+    font-size: 1.3em;
+    margin-top: 20px;
+}
+
+/* Subscribe Section */
+section.subscribe {
+    background: linear-gradient(90deg, rgba(11, 73, 173, 0.7), rgba(11, 73, 173, 0.9));
+    color: #fff;
+    padding: 60px 0;
+    margin-bottom: 5px;
+}
+
+.subscribe-section {
+  padding: 60px 0;
+}
+
+.subscribe-input input {
+    color: #333;
+}
+
+.subscribe-content h3 {
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: bold;    
+  font-size: 1.9em !important;
+}
+
+.subscribe-content p {
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    margin: 0;
+}
+
+.subscription-form {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.subscribe-input {
+  display: inline-block;
+}
+
+.subscribe-control {
+  border: 1px solid transparent;
+  height: 45px;
+  padding: 0 20px;
+  width: 350px;
+  border-radius: 3px;
+}
+
+.subscribe-control:focus {
+  outline: none;
+}
+
+.email-submit-btn i {
+  margin-left: 8px;
+}
+.form-style-2 .subscription-form {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-style-2 .subscribe-control {
+    border: 1px solid #eee;
+}
+.subscribe-input .button {
+    margin-left: 5px;
+    background: #fff;
+    border: 1px solid transparent;
+    color: #222;
+    padding: 11px 20px;
+    border-radius: 4px;
+}
+
+/* Blog Section */
+.post-thumbnail {
+  position: relative;
+  overflow: hidden;
+}
+
+.post-thumbnail img {
+  transition: all 0.3s linear 0s;
+  width: 100%;
+}
+.post-content {
+  overflow: hidden;
+  padding: 30px 0 0;
+}
+.post-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.post-title a:hover {
+  color: var(--primaryColor);
+}
+
+.post-content .event-meta {
+  margin-bottom: 10px;
+}
+
+.blog-post:nth-child(n+2) {
+  margin-top: 30px;
+}
+
+.post-date {
+  margin-bottom: 10px;
+}
+
+.post-date li {
+  margin-right: 15px;
+}
+
+.post-date li a {
+  color: #8e8a8a;
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.post-date li i {
+  padding-right: 10px;
+  color: var(--primaryColor);
+}
+.post-content p {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.blog-post blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 15px;
+    border-left: 5px solid var(--primaryColor);
+    background: #f6f6f6;
+    font-weight: 500;
+    font-style: italic;
+}
+.post-list li {
+    font-weight: 500;
+    color: #6b6767;
+}
+
+a.button {
+    padding: 12px 25px;
+    background: var(--primaryColor);
+    color: #fff;
+}
+
+div.sspp-section {
+    padding: 60px 10px;
+}
+
+.area-heading {
+    padding: 0px 0px 40px 0px;
+    text-align: center;
+}
+.area-title {
+    font-weight: bold;
+    color: #222;
+}

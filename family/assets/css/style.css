@@ -1,0 +1,330 @@
+:root {
+    --primaryColor: #333D4A;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'roboto', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    -webkit-font-smoothing: antiliased;
+    z-index: 1;
+}
+
+html, body {
+    background: #f1f1f1;
+    overflow: hidden;
+    height: 100%;
+}
+
+a {
+    color: var(--primaryColor) !important;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.column {
+    float: left;
+}
+
+.column-1 {
+    width: 10%;
+}
+
+.column-2 {
+    width: 20%;
+}
+
+.column-2-5  {
+    width: 25%;
+}
+
+.column-3 {
+    width: 30%;
+}
+
+.column-4 {
+    width: 40%;
+}
+
+.column-5 {
+    width: 50%;
+}
+
+.column-6 {
+    width: 60%;
+}
+
+.column-7 {
+    width: 70%;
+}
+
+.column-8 {
+    width: 80%;
+}
+
+.column-9 {
+    width: 90%;
+}
+
+.column-10 {
+    width: 100%;
+}
+
+a {
+    color: var(--primaryColor);
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    border: none;
+    background: transparent;
+    padding: 10px 5px;
+    color: #5c5c61;
+}
+
+footer p.copyright {
+    text-align: center;
+    padding: 5px 10px;
+}
+
+/* div.body */
+.body {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    overflow: hidden;
+    background: #f5f5fa;
+}
+
+aside.sidebar {
+    width: 300px;
+    background: #333D4A;
+    min-height: 100%;
+    max-height: 100%;
+}
+
+aside.sidebar header {
+    padding: 20px;
+}
+
+aside.sidebar a {
+    color: #f1f1f1 !important;
+}
+
+aside.sidebar header img.logo {
+    width: 100%;
+}
+
+aside.sidebar ul li {
+    padding: 15px 17px;
+}
+
+div.page {
+    width: 100%;
+    overflow-y: scroll;
+}
+
+div.nav ul {
+    list-style: none;
+    height: 100%;
+}
+
+div.nav ul li {
+    padding: 13px 10px;
+    height: 100%;
+    display: inline-block;
+}
+
+aside.sidebar ul li.active {
+    background: rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #fff;
+}
+
+div.members {
+    padding: 10px 5px;
+}
+
+p.formInfo {
+    font-size: 13px !important;
+}
+
+.pageHeader {
+    background: #fff;
+    height: 55px;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 1px 2px 1px #ddd;
+    font-size: 1em;
+    color: #676a6d;
+}
+
+.pageHeader a {
+    color: #676a6d !important;
+}
+
+.pageHeader .sideToggle {
+    font-size: 1.5em;
+    padding: 15px 0 13px 40px;
+}
+
+.pageHeader .logout {
+    padding: 18px 40px 17px 0;
+}
+
+.pageContainer {
+    padding: 20px 20px;
+}
+
+.container {
+    background: #fff;
+    border-radius: 1px;
+    border: 1px solid #eee;
+    box-shadow: 1px 1px 2px #ccc;
+    padding: 15px 10px;
+    width: 100%;
+}
+
+.pageHeader button.canvasTrigger {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #676a6d;
+}
+
+.containForm {
+    padding: 10px 20px;
+    background: #eee;
+    width: 470px;
+}
+
+.containForm .input-group {
+    margin: 20px 0;
+}
+
+.containForm .input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.containForm .input-group input, .containForm .input-group select {
+    width: 100%;    
+    padding: 7px 8px;
+    font-size: 1.0em;
+}
+
+.containForm button[type=submit] {
+    padding: 8px 25px;
+    font-size: 1.0em;
+    border-radius: 0;
+    border: 1px solid #333D4A;
+    background: #333D4A;
+    cursor: pointer;
+    color: #fff;
+}
+
+.containForm input[type=checkbox] {
+    width: auto;
+}
+
+label.soceity {
+    margin-top: 5px;
+}
+
+div.check {
+    margin: 3px 0;
+}
+
+div.container.profile {
+    padding: 5px 10px;
+}
+
+div.container.profile div.input-group {
+    margin: 10px 0;
+    padding: 3px 0;
+}
+
+div.container.profile div.input-group label {
+    font-weight: bold;
+    margin-bottom: 3px;
+    font-size: 1.0;
+}
+
+div.container.profile div.input-group p {
+    font-size: 1.04em;
+}
+
+table.member {
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+}
+
+table.member tr {
+    width: 100%;
+    padding: 5px;
+}
+
+table.member tr th {
+    padding: 13px 12px;
+}
+
+table.member tr td {
+    padding: 10px 12px;
+}
+
+table.member tr:nth-child(odd) {
+    background: #f1f1f1;
+}
+
+div.memberTable {
+    overflow-x: auto;
+}
+
+td.options {
+    width: 260px;
+}
+
+button.table-btn {
+    padding: 5px 15px;
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+table tr td:first-child {
+    text-align: center;
+}
+
+button.table-btn.info {
+    background: #5bc0de;
+    border: 1px solid #46b8da;
+}
+
+button.table-btn.success {
+    background: #41B314;
+    border: 1px solid #3ca512;
+}
+
+button.table-btn.danger {
+    background: #d9534f;
+    border: 1px solid #d43f3a;
+}
