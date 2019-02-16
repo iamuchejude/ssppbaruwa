@@ -16,6 +16,7 @@
         public static function getConfig()
         {
             session_start();
+            
             include_once(__DIR__."/src/app.php");
             include_once(__DIR__."/src/database.php");
             include_once(__DIR__."/src/access.php");

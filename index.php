@@ -1,7 +1,7 @@
 <?php
-include_once (__DIR__ . '/functions.php');
-Functions::getConfig ();
-Functions::getTemplate ('header', 'SS. Peter and Paul | One Faith. One Heart. One Soul.');
+    include_once (__DIR__ . '/functions.php');
+    Functions::getConfig ();
+    Functions::getTemplate ('header', 'SS. Peter and Paul | One Faith. One Heart. One Soul.');
 ?>
     <div class="hero">
         <div class="heroContent">

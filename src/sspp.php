@@ -57,9 +57,9 @@
         $profession = trim($_POST['profession']);
         $soceity = $_POST['soceities'];
 
-        print_r($_POST['picture']);
-        print_r($_FILES['picture']);
-        die();
+        // print_r($_POST['picture']);
+        // print_r($_FILES['picture']);
+        // die();
         // $photoName = $_FILES['photo']['name'];
         // $tmpPhoto = $_FILES['tmp']['photo'];
 

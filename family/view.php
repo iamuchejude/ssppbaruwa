@@ -75,8 +75,8 @@
                 <label>Soceity(ies)</label>
                 <p>
                     <?php 
-                    if ($member['Soceities'] != null) {
-                        echo $member['Soceities'];
+                    if ($member['soceities'] != null) {
+                        echo $member['soceities'];
                     } else {
                         echo "No Soceity";
                     }

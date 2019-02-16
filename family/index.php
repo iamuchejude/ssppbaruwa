@@ -34,7 +34,6 @@
                     <td><?= $members['organization']; ?></td>
                     <td class="options">
                         <a href="view?id=<?= $members['id'] ?>"><button class="table-btn info"><i class="fa fa-eye"></i> Info</button></a>
-                        <!-- <a href="edit?id="><button class="table-btn success"><i class="fa fa-edit"></i> Edit</button></a> -->
                         <a href="?action=delete&id=<?= $members['id'] ?>"><button class="table-btn danger"><i class="fa fa-trash"></i> Delete</button></a>
                     </td>
                 </tr>
