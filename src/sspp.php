@@ -7,7 +7,7 @@
     $getCurFamily = $conn->query("SELECT * FROM families WHERE families.id='$uid'");
     $family = $getCurFamily->fetch_assoc();
 
-    $getMembers = $conn->query("SELECT * FROM members WHERE members.family_id='$uid'");
+    $getMembers = $conn->query("SELECT * FROM members WHERE family='$uid'");
 
     // Logout Function
     if(isset($_GET['logout'])) {

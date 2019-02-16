@@ -23,18 +23,18 @@
                 </tr>
                 <?php
                     $count = 1;
-                    while($members = $getMembers->fetch_assoc()) {
+                    while($member = $getMembers->fetch_array()) {
                 ?>
                 <tr>
                     <td><?= $count++; ?></td>
-                    <td><?= $members['first_name']; ?></td>
-                    <td><?= $members['other_name']; ?></td>
-                    <td><?= $members['gender']; ?></td>
-                    <td><?= $members['status']; ?></td>
-                    <td><?= $members['organization']; ?></td>
+                    <td><?= $member['first_name']; ?></td>
+                    <td><?= $member['other_name']; ?></td>
+                    <td><?= $member['gender']; ?></td>
+                    <td><?= $member['status']; ?></td>
+                    <td><?= $member['organization']; ?></td>
                     <td class="options">
-                        <a href="view?id=<?= $members['id'] ?>"><button class="table-btn info"><i class="fa fa-eye"></i> Info</button></a>
-                        <a href="?action=delete&id=<?= $members['id'] ?>"><button class="table-btn danger"><i class="fa fa-trash"></i> Delete</button></a>
+                        <a href="view?id=<?= $member['id'] ?>"><button class="table-btn info"><i class="fa fa-eye"></i> Info</button></a>
+                        <a href="?action=delete&id=<?= $member['id'] ?>"><button class="table-btn danger"><i class="fa fa-trash"></i> Delete</button></a>
                     </td>
                 </tr>
                 <?php

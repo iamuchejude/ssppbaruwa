@@ -12,10 +12,10 @@ class Families
         }
     }
 
-    public static function getOne($family_id, $conn)
+    public static function getOne($family, $conn)
     {
         try {
-            $query = $conn->query("SELECT * FROM families WHERE id='$family_id'");
+            $query = $conn->query("SELECT * FROM families WHERE id='$family'");
             $row = $query->fetch_assoc();
             return $row;
         } catch (Exception $e) {
@@ -34,10 +34,10 @@ class Families
         }
     }
 
-    public static function delete($family_id, $conn)
+    public static function delete($family, $conn)
     {
         try {
-            $delete = $conn->query("DELETE FROM families WHERE id='" . (int)$family_id . "'");
+            $delete = $conn->query("DELETE FROM families WHERE id='" . (int)$family . "'");
             return $delete;
         } catch (Exception $e) {
             return "Error Occured: " . $e->getMessage() . " on " . $e->getLine() . " in " . $e->getFile();
@@ -46,11 +46,11 @@ class Families
 
     public static function create($new_family = array())
     {
-        $family_id = random_int(11111, 99999);
+        $family = random_int(11111, 99999);
         $created_date = date('D, d M Y H:i:a');
         $updated_date = date('D, d M Y H:i:a');
         try {
-            $insert = $conn->query("INSERT INTO families VALUES ('$family_id', '$new_family[0]', '$new_family[1]', '$new_family[2]', '$new_family[3]', '$new_family[4]', '$new_family[5]', '$created_date', '$updated_date')");
+            $insert = $conn->query("INSERT INTO families VALUES ('$family', '$new_family[0]', '$new_family[1]', '$new_family[2]', '$new_family[3]', '$new_family[4]', '$new_family[5]', '$created_date', '$updated_date')");
             return $insert;
         } catch (Exception $e) {
             return "Error Occured: " . $e->getMessage() . " on " . $e->getLine() . " in " . $e->getFile();

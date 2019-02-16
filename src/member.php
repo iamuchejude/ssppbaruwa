@@ -123,7 +123,7 @@ class Members
 
     // print_r(count(Members::getOne(353795)));
     
-    // foreach(Members::getSome(['family_id', 54321]) as $member) {
+    // foreach(Members::getSome(['family', 54321]) as $member) {
     //         // echo json_encode($member, JSON_PRETTY_PRINT);
     //         print_r($member);
     //         echo "<br><br>";

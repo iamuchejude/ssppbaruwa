@@ -1,8 +1,8 @@
 <?php
-    $server = '127.0.0.1';
+    $server = 'localhost';
     $database = 'church@sssp_database';
     $user = 'sspp';
-    $password = '1234567890@asdfghjkl';
+    $password = 'Nairaclone@24680';
     $port = 3306;
 
     try {
