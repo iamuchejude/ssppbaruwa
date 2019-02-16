@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Feb 16, 2019 at 04:46 PM
+-- Generation Time: Feb 16, 2019 at 10:47 PM
 -- Server version: 5.7.23
 -- PHP Version: 7.2.10
 
@@ -295,9 +295,17 @@ CREATE TABLE `families` (
   `email` varchar(225) NOT NULL,
   `bcc` varchar(225) NOT NULL,
   `passkey` varchar(225) NOT NULL,
+  `status` int(11) NOT NULL DEFAULT '1',
   `created_date` varchar(225) NOT NULL,
   `updated_date` varchar(225) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `families`
+--
+
+INSERT INTO `families` (`id`, `name`, `lga`, `state`, `nationality`, `address`, `phone_number`, `email`, `bcc`, `passkey`, `status`, `created_date`, `updated_date`) VALUES
+(33050, 'Nwankwo', 'Awgu', 'Enugu', 'Nigeria', '1, Dr. Ajigbotosho Street, Mercyland Estate, Ayobo', '08029293344', 'n.nwankwo@gmail.com', 'Unique Estate Commnunity', '97b3e962e4208ca73219950d7566c852', 1, 'Sat, 16 Feb 2019 22:24:pm', 'Sat, 16 Feb 2019 22:24:pm');
 
 -- --------------------------------------------------------
 
@@ -325,6 +333,14 @@ CREATE TABLE `members` (
   `created_date` varchar(225) NOT NULL,
   `updated_date` varchar(225) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `members`
+--
+
+INSERT INTO `members` (`id`, `family`, `surname`, `first_name`, `other_name`, `gender`, `date_of_birth`, `age`, `phone_number`, `baptism`, `holy_eucharist`, `confirmation`, `profession`, `status`, `organization`, `soceities`, `created_date`, `updated_date`) VALUES
+(256038, 33050, 'Nwankwo', 'Uche', 'Jude', 'Male', '2000-03-05', '18', '08135642400', 'Yes', 'Yes', 'No', 'Software Engineer', 'Single', 'Catholic Youth Organization', 'Catholic Charismatic Renewal of Nigeria', 'Sat, 16 Feb 2019 22:28:pm', 'Sat, 16 Feb 2019 22:28:pm'),
+(686968, 33050, 'Nwankwo', 'Ogochukwu', 'Juliet', 'Female', '2001-03-19', '18', '09032902923', 'Yes', 'Yes', 'Yes', 'Software Engineer', 'Single', 'Catholic Youth Organization', 'St. Anthony of Padua', 'Sat, 16 Feb 2019 22:38:pm', 'Sat, 16 Feb 2019 22:38:pm');
 
 -- --------------------------------------------------------
 
@@ -416,13 +432,13 @@ ALTER TABLE `countries`
 -- AUTO_INCREMENT for table `families`
 --
 ALTER TABLE `families`
-  MODIFY `id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33051;
 
 --
 -- AUTO_INCREMENT for table `members`
 --
 ALTER TABLE `members`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=787624;
 
 --
 -- AUTO_INCREMENT for table `professions`
