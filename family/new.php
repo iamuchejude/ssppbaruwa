@@ -86,8 +86,8 @@
             <div class="input-group">
                 <label class="soceity">Select Soceity(ies) you belong to</label>
                 <?php
-                    $getSoceities = $conn->query("SELECT * FROM soceities");
-                    while($row = $getSoceities->fetch_assoc()) {
+                    $getSocieties = $conn->query("SELECT * FROM societies");
+                    while($row = $getSocieties->fetch_assoc()) {
                 ?>
                     <div class="check">
                         <input type="checkbox" name="soceities[]" value="<?= $row['name'] ?>">

@@ -33,13 +33,13 @@
         <div class="right join">
             <ul>
                 <li>
-                    <a href="http://localhost/sspp/login">
+                    <a href="http://localhost:8888/sspp/login">
                         <span class="topIcon"><i class="fa fa-user-circle"></i></span>
                         <span class="topText">Login</span>
                     </a>
                 </li>
                 <li>
-                    <a href="http://localhost/sspp/register">
+                    <a href="http://localhost:8888/sspp/register">
                         <span class="topIcon"><i class="fa fa-user-circle"></i></span>
                         <span class="topText">Join Us</span>
                     </a>
@@ -49,14 +49,14 @@
     </div>
     <header class="clear">
         <div class="left logo">
-            <a href="http://localhost/sspp/">
+            <a href="http://localhost:8888/sspp/">
                 <img src="assets/img/logo.png" alt="Logo" class="logo" />
             </a>
         </div>
         <div class="right nav">
             <nav>
                 <ul>
-                    <li><a href="http://localhost/sspp/">Home</a></li>
+                    <li><a href="http://localhost:8888/sspp/">Home</a></li>
                     <li class="dropDown"><a href="javascipt:void(0)">About</a>
                         <!-- <ul>
                             <li><a href="">Church History</a></li>
@@ -75,7 +75,7 @@
                     <div></div>
                     <div></div>
                 </button>
-                <a href="http://localhost/sspp/donate" class="modalActivator" data-mod="donate"><button data-mod="donate" class="joinUs">Donate</button></a>
+                <a href="http://localhost:8888/sspp/donate" class="modalActivator" data-mod="donate"><button data-mod="donate" class="joinUs">Donate</button></a>
             </nav>
         </div>
     </header>
